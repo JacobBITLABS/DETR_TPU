@@ -139,6 +139,7 @@ def main(args):
         else:
             model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.gpu])
             model_without_ddp = model.module
+    
     n_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
     print('number of params:', n_parameters)
 
@@ -198,7 +199,7 @@ def main(args):
     from engine import tpu_evaluate
     tpu_evaluate(model, criterion, postprocessors,
                 data_loader_val, base_ds, device, args.output_dir)
-    return
+    # return
 
     if args.eval:
         test_stats, coco_evaluator = evaluate(model, criterion, postprocessors,
