@@ -162,7 +162,7 @@ def tpu_evaluate(model, criterion, postprocessors, data_loader, base_ds, device,
     cnt = 0
     total = len(data_loader)
     for samples, targets in data_loader:
-        print('test')
+        print('test - [TPU Evaluate]')
         samples = samples.to(device)
         targets = [{k: v.to(device) for k, v in t.items()} for t in targets]
 
