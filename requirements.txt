@@ -8,7 +8,8 @@ git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi
 scipy
 onnx
 onnxruntime
+
 # TPU support in Google COLAB
-cloud-tpu-client==0.10 # https://storage.googleapis.com/tpu-pytorch/wheels/torch_xla-1.9-cp37-cp37m-linux_x86_64.whl
+cloud-tpu-client==0.10 https://storage.googleapis.com/tpu-pytorch/wheels/torch_xla-1.8-cp37-cp37m-linux_x86_64.whl
 pytorch-lightning
 torch_xla
