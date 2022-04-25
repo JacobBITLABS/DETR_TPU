@@ -16,8 +16,8 @@ def load_model():
                     check_hash=True)
 
         # Remove class weights
-        # del checkpoint["model"]["class_embed.weight"]
-        # del checkpoint["model"]["class_embed.bias"]
+        del checkpoint["model"]["class_embed.weight"]
+        del checkpoint["model"]["class_embed.bias"]
 
         # SaveOGH
         torch.save(checkpoint,
