@@ -193,7 +193,7 @@ def main(args):
         else:
             checkpoint = torch.load(args.resume, map_location='cpu')
             print("Model Loaded...")
-            print("num params: ", len(checkpoint.parameters()))
+            #print("num params: ", len(checkpoint.parameters()))
 
         model_without_ddp.load_state_dict(checkpoint['model'])
         if not args.eval and 'optimizer' in checkpoint and 'lr_scheduler' in checkpoint and 'epoch' in checkpoint:
