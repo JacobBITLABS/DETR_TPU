@@ -1,6 +1,7 @@
 python3 prep_train.py
 
 python3 main.py \
+  --device tpu  \
   --dataset_file "coco" \
   --coco_path ../DroneVis_DETR/ \
   --output_dir /home/jacobnielsen/DETR_run/DETR_TPU/output \
