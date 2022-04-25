@@ -1,4 +1,4 @@
-# python3 prep_train.py
+python3 prep_train.py
 
 python3 main.py \
   --device tpu  \
