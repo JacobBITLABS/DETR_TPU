@@ -190,13 +190,10 @@ def main(args):
         if args.resume.startswith('https'):
             checkpoint = torch.hub.load_state_dict_from_url(
                 args.resume, map_location='cpu', check_hash=True)
-            # jacob add
-            del checkpoint["model"]["class_embed.weight"]
-            del checkpoint["model"]["class_embed.bias"]
-            # jacob add
         else:
             checkpoint = torch.load(args.resume, map_location='cpu')
-        
+            print("Model Loaded...")
+            print("num params: ", len(checkpoint.parameters()))
 
         model_without_ddp.load_state_dict(checkpoint['model'])
         if not args.eval and 'optimizer' in checkpoint and 'lr_scheduler' in checkpoint and 'epoch' in checkpoint:
