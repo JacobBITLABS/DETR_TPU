@@ -8,5 +8,4 @@ python3 main.py \
   --resume 'https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth' \
   --lr 1e-5 \
   --lr_backbone 1e-6 \
-  --num_classes = 6 # adds automaticallly one to handle no-objs
   --epochs 3
