@@ -150,9 +150,9 @@ def evaluate(model, criterion, postprocessors, data_loader, base_ds, device, out
         stats['PQ_st'] = panoptic_res["Stuff"]
     return stats, coco_evaluator
 
-import torch_xla
-import torch_xla.core.xla_model as xm
-import torch_xla.debug.metrics as met
+# import torch_xla
+# import torch_xla.core.xla_model as xm
+# import torch_xla.debug.metrics as met
 
 @torch.no_grad()
 def tpu_evaluate(model, criterion, postprocessors, data_loader, base_ds, device, output_dir):
