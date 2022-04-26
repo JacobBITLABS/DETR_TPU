@@ -316,7 +316,8 @@ def build(args):
     # num_classes = 20 if args.dataset_file != 'coco' else 91
     
     #jacob add
-    num_classes = 6
+    if args.dataset_file == "face":
+         num_classes = 1 # no object class is added automatically
 
     if args.dataset_file == "coco_panoptic":
         # for panoptic, we just add a num_classes that is large enough to hold

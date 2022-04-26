@@ -5,3 +5,5 @@ python main.py \
         --device tpu \
         --output_dir ~/detr_output \
         --coco_path ~/data/coco
+
+

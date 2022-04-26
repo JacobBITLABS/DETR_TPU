@@ -1,13 +1,6 @@
 cython
 git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI&egg=pycocotools
 submitit
-# torch>=1.5.0
-#torch == 1.6
-#torch == 1.8
-#install torch
-#torchvision>=0.6.0
-#torch>=1.5.0
-#torch==1.8.2+cpu -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
 torch>=1.5.0
 torchvision>=0.6.0 
 git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi
@@ -19,3 +12,11 @@ onnxruntime
 #cloud-tpu-client==0.10 https://storage.googleapis.com/tpu-pytorch/wheels/torch_xla-1.8-cp37-cp37m-linux_x86_64.whl
 #pytorch-lightning
 #torch_xla
+
+# torch>=1.5.0
+#torch == 1.6
+#torch == 1.8
+#install torch
+#torchvision>=0.6.0
+#torch>=1.5.0
+#torch==1.8.2+cpu -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html

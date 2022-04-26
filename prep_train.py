@@ -1,6 +1,6 @@
 """
 Module to run before the main.py for training\n
-Definedd in train2.sh
+Defined in train2.sh
 """
 import torch, torchvision
 
