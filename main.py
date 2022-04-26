@@ -111,6 +111,7 @@ def get_args_parser():
 
 def main(args):
     if args.device == 'tpu':
+        print("DEVICE TPU")
         args.distributed = False
     else:
         utils.init_distributed_mode(args)
